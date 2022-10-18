@@ -1,0 +1,15 @@
+server:
+  port: 9092
+
+spring:
+  application:
+    name: inventory
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9000/eureka/
+  instance:
+    prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 10
+    lease-renewal-interval-in-seconds: 30
